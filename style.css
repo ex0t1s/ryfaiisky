@@ -1,0 +1,553 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.463);
+}
+
+/* Header */
+header {
+  z-index: 999;
+  margin-top: -1.9vh;
+  padding: 20px;
+  text-align: center;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  width: 100%;
+  border-bottom: 3px solid blue;
+}
+
+nav {
+  padding: 30px;
+  text-align: center;
+  align-items: center;
+}
+
+nav a {
+  margin-right: 50px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  position: relative;
+  font-weight: 800;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+}
+
+nav a:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: orange;
+  transition: all 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s;
+}
+
+.dropdown-btn:hover {
+  background-color: blue;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  text-align: center;
+  margin: 5px;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all .3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-btn {
+  border-radius: 4px 4px 0 0;
+}
+
+/* Beranda */
+
+.rumah {
+  margin: auto;
+  padding: 15.6vh;
+  border-bottom: 3px solid orange;
+}
+
+.awal {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+  margin-top: 14px;
+  align-items: center;
+  padding: 40.5px;
+}
+
+.awal img {
+  width: 50vh;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.hallo {
+  justify-content: center;
+  margin: auto;
+  margin-left: 15vh;
+  margin-top: 15vh;
+}
+
+.hallo h2 {
+  margin-right: 40vh;
+  color: blue;
+  font-size: 2.5rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 20px;
+}
+
+.hallo span {
+  color: orange;
+}
+
+.hallo p {
+  margin-right: 41.1vh;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 70px;
+}
+
+.hallo a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hallo a:hover {
+  background-color: orange;
+}
+
+.hallo .cont {
+  margin-right: 20vh;
+}
+
+.hallo .lengkap {
+  margin-right: 50vh;
+}
+
+.link {
+  margin-top: 2vh;
+  margin-bottom: 20px;
+  margin-right: 39vh;
+}
+
+.link a {
+  font-size: 15px;
+  padding: 15px;
+}
+
+/* Tentang Saya */
+
+.tentang {
+  margin-top: -21.6vh;
+  padding: 8px;
+  text-align: center;
+  margin-bottom: 30vh;
+  border-bottom: 3px solid orange;
+}
+
+.saya {
+  padding: -20px;
+}
+
+.saya h2 {
+  margin-top: 18vh;
+  padding-top: 10vh;
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.aku {
+  display: flex;
+  padding: 10px;
+}
+
+.paragraf {
+  margin-right: 20px;
+  margin-top: 60px;
+}
+
+.paragraf h1 {
+  color: blue;
+  text-align: left;
+  margin-left: 6.5vh;
+}
+
+.paragraf p {
+  color: white;
+  text-shadow: 2px 2px 1px black;
+  text-align: left;
+  margin-left: 40px;
+  font-size: 1.1rem;
+}
+
+.rifai img {
+  width: 50vh;
+  margin: 5px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+/* Portofolio */
+
+.poto {
+  align-items: center;
+  text-align: center;
+  margin-top: -51.6vh;
+  border-bottom: 3px solid orange;
+}
+
+.informasi {
+  margin-bottom: -25vh;
+  padding: 30vh;
+}
+
+.portfolio h1 {
+  font-size: 3rem;
+  color: black;
+  text-align: center;
+  padding: 30px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+}
+
+.portfolio table {
+  width: 94%;
+  border-collapse: collapse;
+  margin: 30px;
+  align-items: center;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.portfolio th,
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.portfolio th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.portfolio tr:nth-child(n) {
+  background-color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.portfolio tr:hover {
+  background-color: #e2c803;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.portfolio tr a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.portfolio tr a:hover {
+  color: white;
+}
+
+/* Opini */
+.lengkap {
+  margin-top: -21.6vh;
+  padding: 20vh;
+  border-bottom: 3px solid orange;
+}
+
+.lebih {
+  margin-bottom: -23.7vh;
+  padding: 5vh;
+}
+
+.Opini {
+  align-items: center;
+  text-align: center;
+  margin: 3px;
+  padding: -20px;
+}
+.Opini h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+}
+
+.grid-container {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 180px;
+  background-color: #ddd;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.judul-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact */
+.panggil {
+  padding: 20vh;
+  margin-top: -21.7vh;
+}
+
+.contact {
+  padding: 50vh;
+}
+
+.contact {
+  color: white;
+  padding: 10vh;
+}
+
+.contact .section-title h2 {
+  color: blue;
+}
+
+.contact .section-title h2::after {
+  background-color: white;
+}
+
+.contact-content {
+  display: flex;
+  gap: 3rem;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+  margin-bottom: 2rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.maps {
+  margin: 30px;
+  border-radius: 20px;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  flex: 1;
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea.form-control {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: orange;
+}
+
+/* Fother */
+.copy {
+  margin-top: -19vh;
+}
+
+footer {
+  padding-top: -5vh;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.social-link:hover {
+  background-color: orange;
+  transform: translateY(-3px);
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: white;
+}
